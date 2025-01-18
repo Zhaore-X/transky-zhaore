@@ -1,0 +1,48 @@
+{
+  "name": "transky-book",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "《药娘的天空》",
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "NODE_OPTIONS=\"--max_old_space_size=16384\" vitepress build src",
+    "preview": "vitepress preview src",
+    "update-package": "pnpm dlx vp-update src"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.12.0",
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "@iconify-json/carbon": "^1.2.5",
+    "@iconify-json/icon-park-outline": "^1.2.2",
+    "@iconify-json/octicon": "^1.2.2",
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.11.1",
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.11.1",
+    "@project-trans/suggestion-box": "^0.0.9",
+    "@project-trans/vitepress-theme-project-trans": "^0.6.1734534752",
+    "@saithodev/semantic-release-backmerge": "^4.0.1",
+    "@unocss/eslint-plugin": "^0.62.4",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-format": "^0.1.3",
+    "semantic-release": "^24.2.0",
+    "unocss": "^0.62.4",
+    "unplugin-vue-components": "^0.27.5",
+    "vite": "^5.4.11",
+    "vitepress": "^1.5.0",
+    "vitepress-plugin-image-viewer": "^1.1.5",
+    "vue": "^3.5.13"
+  },
+  "pnpm": {
+    "overrides": {
+      "hasown": "npm:@nolyfill/hasown@^1",
+      "is-core-module": "npm:@nolyfill/is-core-module@^1"
+    }
+  },
+  "dependencies": {
+    "i": "^0.3.7",
+    "npm": "^10.9.2",
+    "viewerjs": "^1.11.7"
+  }
+}
